@@ -1,0 +1,65 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color:rgb(249, 253, 2);
+}
+
+h1 {
+    color: rgb(249, 253, 2);
+}
+
+/* Attribute Selector */
+a {
+    color:rgb(238, 10, 170);
+    text-decoration: solid;
+}
+
+a:hover {
+    color: rgb(249, 253, 2);
+}
+
+/* Child Selector */
+ul>li {
+    font-weight: bold;
+    color: rgb(249, 253, 2);
+}
+
+/* Sibling Selector */
+h1+p {
+    background-color: rgb(249, 253, 2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover Pseudo-class */
+ul li:hover {
+    color: rgb(249, 253, 2);
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(2) {
+    background-color: rgb(238, 10, 170);
+}
+
+
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+    color: rgb(249, 253, 2);
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: "♟️; ";
+}
+
+/* ::after Pseudo-element */
+a::after {
+    content: " ♛";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 300%;
+    color: rgb(238, 10, 170);
+}
